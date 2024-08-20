@@ -5,7 +5,213 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Admin Dashboard</title>
 		<link rel="stylesheet" href="styles.css">
+		<script src="https://kit.fontawesome.com/9ad1fd037e.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<nav>
+			<figure id="dashboard-svg">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
+			</figure>
+			<div id="dashboard-item">
+				Dashboard
+			</div>
+			<div></div> <div></div>
+			<div><i class="fa-solid fa-house"></i></div> <div>Home</div>
+			<div><i class="fa-regular fa-address-card"></i></div> <div> Profile</div>	
+			<div><i class="fa-solid fa-message"></i></div> <div>Messages</div>	
+			<div><i class="fa-solid fa-clock"></i></div> <div>History</div>	
+			<div><i class="fa-solid fa-file"></i></div> <div>Tasks</div>	
+			<div><i class="fa-solid fa-people-group"></i></div><div> Communities</div>	
+			<div></div> <div></div>
+			<div><i class="fa-solid fa-gear"></i></div> <div>Settings</div>
+			<div><i class="fa-solid fa-circle-question"></div><div></i> Support</div>
+			<div><i class="fa-solid fa-shield"></i></div> <div>Privacy</div>
+		</nav>
+		<header>
+			<div class="first-row">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<input id="search-input">
+				<span></span>
+				<i class="fa-regular fa-bell"></i>
+				<img src="./images/new_york_city.jpg" class="profile-image">
+				<span>Robert Gorny</span>
+			</div>
+			<div class="second-row">
+				<div class="left">
+					<div class="my-profile">
+						<img src="./images/new_york_city.jpg" class="my-profile-image">
+						<span class="greeting">Hi there,</span>
+						<span class="name">Robert Gorny (@robert)</span>
+					</div>
+				</div>
+				<div class="right">
+					<div>New</div>
+					<div>Upload</div>
+					<div>Share</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div id="project-section">
+				<h3>Your Projects</h3>				
+				<div id="project-grid">
+					<div class="grid-item">
+						<div class="flex-start">
+							<h4>Super Cool Project</h4>		
+							<p>
+								Sed tempus ut lacus ut scelerisque.
+								Suspendisse sollucitudin nibh erat, id 
+								facilisis felis accusamsan nec.
+							</p>
+						</div>
+						<div class="flex-end">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="flex-start">
+							<h4>Less Cool Project</h4>		
+							<p>
+								Nullam condimentum ipsum ut lectus vehicula
+								consectetur. Quisque sed dolor tincidunt,
+								consectetur sapien et, facilisis dolor. Duis sem
+								purus, dignissim ut sapien in, varius
+								pellentesque lacus.
+							</p>
+						</div>
+						<div class="flex-end">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="flex-start">
+							<h4>Impossible App</h4>		
+							<p>
+								In hac habitasse platea dictumst. Vivamus
+								dictum rutrum arcu, a placerat velit sagittis
+								id.
+							</p>
+						</div>
+						<div class="flex-end">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="flex-start">
+							<h4>Easy Peasy App</h4>		
+							<p>
+								Etiam cursus eros ac efficitur fringilla.
+								Vestibulum dignissum urna eget accumsan aliquam.
+								Curabur dignissim nisi in tortor
+								commodo, ac bibendum magna tincidunt.
+							</p>
+						</div>
+						<div class="flex-end">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="flex-start">
+							<h4>Ad Blocker</h4>		
+							<p>
+								Quisque eget rutrum nisi. Nam augue
+								justo, cursus vitae metus vel, pharetra
+								hendrerit felis. Aliquam sed malesuada
+								eros.
+							</p>
+						</div>
+						<div class="flex-end">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="flex-start">
+							<h4>Money maker</h4>		
+							<p>
+								Praesent convallis, libero quis congue
+								elementum, nunc ante faucibus sapien, ac
+								scelerisque tortor purus sit amet ex.
+								Pellentesque mollis ne sem vel aliquam.
+							</p>
+						</div>
+						<div class="flex-end">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="aside-sections">
+				<h3>Announcements</h3>
+				<div id="announcement-grid">
+					<div class="grid-item">
+						<h4>Site Maintenance</h4>
+						<p>
+							Vestibulum condimentum tellus lacus,
+							in accumsan elit maximus ac. Donec
+							hendrerit sodales congue...
+						</p>
+					</div>
+					<div class="grid-item">
+						<h4>Community Share Day</h4>
+						<p>
+							Nam vel lectus tincidunt, rutrum nulla
+							eu, ornare libero. Aliquam dictum
+							accumsan porttitor...
+						</p>
+					</div>
+					<div class="grid-item">
+						<h4>Site Maintenance</h4>
+						<p>
+							Vestibulum condimentum tellus lacus,
+							in accumsan elit maximus ac. Donec
+							hendrerit sodales congue...
+						</p>
+					</div>
+				</div>
+				<h3>Trending</h3>
+				<div id="trending-grid">
+					<div class="grid-item">
+						<div class="profile">
+							<img src="./images/seoul.jpg" class="profile-image">
+							<span class="name">@tegan</span>
+							<span class="project">World Peace Builder</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="profile">
+							<img src="./images/new_york_city.jpg" class="profile-image">
+							<span class="name">@robert</span>
+							<span class="project">Very Efficient Microchip</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="profile">
+							<img src="./images/hong_kong.jpg" class="profile-image">
+							<span class="name">@kendall</span>
+							<span class="project">Life Changing App</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="profile">
+							<img src="./images/miami.jpg" class="profile-image">
+							<span class="name">@alex</span>
+							<span class="project">No Traffic Maker</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
